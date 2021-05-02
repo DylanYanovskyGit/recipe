@@ -10,7 +10,7 @@ public class recipeDesign {
     int cookTime;
 
 
-    public recipeDesign()
+    public recipeDesign(ingredients ingredients)
     {
 
     }

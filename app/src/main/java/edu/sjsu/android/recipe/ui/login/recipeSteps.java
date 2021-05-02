@@ -2,7 +2,10 @@ package edu.sjsu.android.recipe.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.service.autofill.OnClickAction;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +21,8 @@ public class recipeSteps extends AppCompatActivity {
     EditText textField2;
     EditText textField3;
     Button add;
-    nextStep =
+    Button nextSteps;
+
 
     @Override
     public <T extends View> T findViewById(int id) {
@@ -33,13 +37,23 @@ public class recipeSteps extends AppCompatActivity {
         textField2 = findViewById(R.id.textView6);
         textField3 = findViewById(R.id.textView7);
         add = findViewById(R.id.addSteps);
+        nextSteps = findViewById(R.id.Display);
 
         steps.add(textfield1.getText().toString().trim());
         steps.add(textField2.getText().toString().trim());
         steps.add(textField3.getText().toString().trim());
 
+        nextSteps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextPage = new Intent(recipeSteps.this, Display.class);
+                startActivity(nextPage);
+            }
+        });
+
 
     }
-    //ccreate  new view and direct to dispaly
-    nextStep.onC
+    //create  new view and direct to displ
+
+
 }
