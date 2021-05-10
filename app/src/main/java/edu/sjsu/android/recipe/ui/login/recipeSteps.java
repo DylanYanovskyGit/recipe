@@ -3,6 +3,7 @@ package edu.sjsu.android.recipe.ui.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -18,7 +19,6 @@ public class recipeSteps extends AppCompatActivity {
     EditText textField2;
     EditText textField3;
     Button add;
-    nextStep =
 
     @Override
     public <T extends View> T findViewById(int id) {
@@ -41,5 +41,5 @@ public class recipeSteps extends AppCompatActivity {
 
     }
     //ccreate  new view and direct to dispaly
-    nextStep.onC
+   display display = new display(steps);
 }
