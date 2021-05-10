@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import edu.sjsu.android.recipe.R;
 
 public class display extends AppCompatActivity {
+    recipeDesign rd = new recipeDesign();
+
 
     EditText step1;
     EditText step2;
@@ -31,4 +33,6 @@ public class display extends AppCompatActivity {
         step3= findViewById(R.id.step3);
 
     }
+
+
 }
